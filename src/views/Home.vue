@@ -2,8 +2,8 @@
 <div>
   <p class="intro">Click on one of the shoes to learn about them</p>
   <p class="shoes">
-    <router-link v-for="product in products" :key="product.id" :to="'/product/' + product.id">
-       <img :src="'/images/shoes/'+product.image">
+    <router-link v-for="shoe in shoes" :key="shoe.id" :to="'/shoe/' + shoe.id">
+       <img :src="'/images/shoes/'+shoe.image">
     </router-link>
   </p>
 </div>
@@ -13,8 +13,8 @@
 export default {
   name: 'Home',
   computed: {
-    products() {
-      return this.$root.$data.products;
+    shoes() {
+      return this.$root.$data.shoes;
     }
   }
 }
