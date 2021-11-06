@@ -7,7 +7,7 @@
     <router-view />
   </div>
   <div class="footer">
-    <a href="url">My Git Hub</a>
+    <a href="https://github.com/dwnsl/creativeproject3">My Git Hub</a>
   </div>
 </div>
 </template>
